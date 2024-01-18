@@ -1,0 +1,229 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    color: black;
+}
+.container{
+    border: 1px solid rgb(230, 222, 222);
+    height: 100%;
+    width: 600px;
+    box-shadow: 0 5px 8px 6px rgb(161, 167, 162);
+    border-radius: 18px;
+    background-color: rgb(244, 233, 244);
+}
+.flip-container{
+    perspective: 1000px;
+}
+.front{
+    box-shadow: 0 10px 15px black;
+    background-size: cover;
+    transform: rotateY(0deg);
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+}
+.front img{
+    height: 100px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.front h2{
+    color: bisque;
+    margin-left: 170px;
+    margin-top: 80px;
+    font-size: 35px;
+    box-shadow: 0 15px 25px 8px green;
+}
+
+.back{
+    box-shadow: 0 10px 15px black;
+    background-size: cover;
+    background-color: rgb(0, 0, 23);
+    transform: rotateY(180deg);
+}
+.back img{
+    height: 100px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.flip-container, .front, .back{
+    height: 400px;
+    width: 600px;
+    border-radius: 18px;
+}
+.flip-container:hover .flipper{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.flipper{
+    transition: .5s;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.front, .back{
+    backface-visibility: hidden;
+    position: absolute;
+}
+h1, p, .icons{
+    color: rgb(22, 243, 177);
+    margin-left: 25%;
+    
+    line-height: 25px;
+}
+h1{
+    margin-top: 5%;
+    border-bottom: 2px solid grey;
+    width: 60%;
+    padding-bottom: 15px;
+}
+.bold{
+    font-weight: bold;
+    color: rgb(131, 255, 6);
+    
+}
+.Contact{
+    margin-left: 15px;
+    font-size: 18px;
+}
+.icon-group a{
+    text-decoration: none;
+    color:rgb(22, 243, 177) ;
+}
+.back .icons span,
+.back .icons a{
+    font-size: 16px;
+    text-decoration: none;
+}
+.back .icons a:hover{
+    color: aliceblue;
+}
+
+
+
+.service h4
+{
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 4px dotted rgb(9, 107, 38);
+    width: 50%;
+    margin-left: 140px;
+    color: rgb(15, 101, 4);
+   
+}
+.image{
+    border: 1px solid black;
+    height: 435px;
+    width: 580px;
+    margin-left: 8px;
+    border-radius: 18px;
+    align-items: center;
+    background-color: rgb(65, 65, 80);
+}
+.image img{
+     height: 350px;
+     border: 1px solid rgb(231, 182, 182);
+     margin-left: 28px;
+     margin-top: 15px;
+     border-radius: 20px;
+     transition: 0.4s;
+}
+.image img:hover{
+    transform: scale(1.1);
+}
+.image button{
+    height: 40px;
+    width: 70px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgba(176, 176, 176, 0.996);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.image button a{
+    text-decoration: none;
+}
+.image button:hover{
+    background-color: rgb(120, 74, 162);
+    color: rgb(242, 242, 16);
+    transform: scale(1.1);
+}
+.design h4{
+    margin-left: 15px;
+    font-size: 22px;
+    color: rgb(6, 6, 91);
+}
+.pay h1{
+    font-size: 20px;
+    color: black;
+    width: 290px;
+    border-bottom: 4px double black;
+    
+}
+.pay .no{
+    font-weight: 400;
+}
+.bank {
+    margin-left: 150px;
+    border-bottom: 4px double black;
+    width: 340px;
+}
+.bank .name{
+    font-weight: 400;
+    font-size: 20px;
+}
+.bank h2{
+    font-size: 20px;
+}
+.form input{
+    margin-left: 80px;
+    height: 35px;
+    line-height: 1px;
+    width: 450px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: rgb(59, 62, 54);
+    border-radius: 5px;
+    border: 1px solid grey;
+    display: list-item;
+    
+}
+.form input:hover{
+    border-color: blue;
+}
+.form #en{
+    height: 55px;
+
+}
+.form #submit{ 
+    margin-left: 240px;
+    height: 35px;
+    width: 80px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(3, 3, 72);
+    color: wheat;
+    cursor: pointer;
+}
+.footer{
+    background-color: rgb(71, 143, 191);
+    height: 100px;
+}
+.footer h2{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer a{
+    margin-left: 210px;
+    font-weight: bold;
+    font-size: 18px;
+}
